@@ -18,7 +18,7 @@
 3. Deploy static web hosting stack:
 
 ```bash
-aws cloudformation deploy --template-file hosting.yml --stack-name intui-web-hosting
+aws cloudformation deploy --template-file hosting.yml --stack-name my-stack-name
 ```
 
 4. Deploy CD-pipeline stack:
@@ -26,7 +26,7 @@ aws cloudformation deploy --template-file hosting.yml --stack-name intui-web-hos
 ```bash
 aws cloudformation deploy \
 --template-file cd-pipeline.yml \
---stack-name intui-cd-web-pipeline \
+--stack-name my-stack-name-pipeline \
 --capabilities CAPABILITY_IAM \
---parameter-overrides file://./secret-pipeline-parameters.json
+--parameter-overrides file://secret-pipeline-parameters.json
 ```
