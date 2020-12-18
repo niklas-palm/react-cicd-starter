@@ -7,7 +7,7 @@ Description:
 Parameters:
   EnvironmentName:
     Type: String
-    Default: envName
+    Default: env-name
     Description: "Environment prefixing resources, tagging resources and for importing resources from other stacks"
 
 Resources: 
